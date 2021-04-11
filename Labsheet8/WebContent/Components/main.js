@@ -96,3 +96,17 @@ function getStudentCard(name, gender, year)
 
 	return student;
 }
+
+
+/*Implementing remove function*/
+
+$(document).on("click", ".remove", function(event)
+{
+	$(this).closest(".student").remove();
+	
+	$("#alertSuccess").text("Removed successfully.");
+	$("#alertSuccess").show();
+	
+	
+	
+}); 
